@@ -1,0 +1,15 @@
+# Whyme's XVM Preferences
+
+Whyme 的 XVM 个人偏好
+
+## Features
+
+* Sixth Sense
+  + 10s delay
+  + No barking sound for Rudy
+* Minimap
+  + Hold `Ctrl` to zoom in and center
+* Hangar
+  + Default to buying premium consumables w/ credits
+* Carousel
+  + Show MoE percentage and XP-to-elite for selected vehicle
