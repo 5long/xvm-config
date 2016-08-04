@@ -58,11 +58,11 @@
     "nations_order": [],
     // Order of types of vehicles.
     // Порядок классов техники.
-    "types_order":   ["lightTank", "mediumTank", "heavyTank", "AT-SPG", "SPG"],
+    "types_order":   ["heavyTank", "mediumTank", "AT-SPG", "SPG", "lightTank"],
     // Tank sorting criteria, available options: (minus = reverse order)
     // Критерии сортировки танков, доступные значения: (минус = в обратном порядке)
     // "nation", "type", "level", "maxBattleTier", "premium", "winRate", "-level", "-maxBattleTier", "-premium", "-winRate"
-    "sorting_criteria": ["nation", "type", "level"],
+    "sorting_criteria": ["level", "type", "nation"],
     // Suppress the tooltips for tanks in carousel
     // Убрать подсказки к танкам в карусели
     "suppressCarouselTooltips": false,

@@ -14,4 +14,5 @@ Whyme 的 XVM 个人偏好
   + When entering battle, warn when vehicle low on ammo
 * Carousel
   + Show MoE percentage and XP-to-elite for selected vehicle
+  + Sort vehicle by level-type-nation, which helps picking vehicle for platoon
 * Hide clan icons everywhere
