@@ -11,6 +11,7 @@ Whyme 的 XVM 个人偏好
   + Hold `Ctrl` to zoom in and center
 * Hangar
   + Default to buying premium consumables w/ credits
+  + When entering battle, warn when vehicle low on ammo
 * Carousel
   + Show MoE percentage and XP-to-elite for selected vehicle
 * Hide clan icons everywhere
