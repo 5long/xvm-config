@@ -16,7 +16,7 @@
     // Format of clock on the Battle Loading Screen.
     // Формат часов на экране загрузки боя.
     // http://php.net/date
-    "clockFormat": "H:i:s",
+    "clockFormat": "",
     // true - enable display of battle tier.
     // true - включить отображение уровня боя.
     "showBattleTier": false,
