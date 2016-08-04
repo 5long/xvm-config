@@ -18,10 +18,10 @@
     "defaultBoughtForCredits": true,
     // true - Hide price button in tech tree
     // true - Прятать кнопку с ценой в дереве исследований
-    "hidePricesInTechTree": false,
+    "hidePricesInTechTree": true,
     // true - Show mastery mark in tech tree
     // true - Показывать знак мастерства в дереве исследований
-    "masteryMarkInTechTree": true,
+    "masteryMarkInTechTree": false,
     // true - Allow to consider the exchange of experience with gold in tech tree
     // true - Разрешить учитывать обмен опыта за золото в дереве исследований
     "allowExchangeXPInTechTree": true,

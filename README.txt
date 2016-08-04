@@ -19,3 +19,4 @@ Whyme 的 XVM 个人偏好
   - Clan icon
   - Clock
 * Show battle tier everywhere
+* Cleaner tech tree
