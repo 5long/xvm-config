@@ -18,3 +18,4 @@ Whyme 的 XVM 个人偏好
 * Hide some UI elements everywhere
   - Clan icon
   - Clock
+* Show battle tier everywhere

@@ -19,7 +19,7 @@
     "clockFormat": "",
     // true - enable display of battle tier.
     // true - включить отображение уровня боя.
-    "showBattleTier": false,
+    "showBattleTier": true,
     // true - disable Platoon icons. This blank space can house, for example, clan logos.
     // true - убрать отображение иконки взвода. На пустое поле можно вывести, например, иконку клана.
     "removeSquadIcon": false,

@@ -24,6 +24,6 @@
     "showTotals": true,
     // true - Enable display of battle tier.
     // true - включить отображение уровня боя.
-    "showBattleTier": false
+    "showBattleTier": true
   }
 }
