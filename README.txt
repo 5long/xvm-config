@@ -13,3 +13,4 @@ Whyme 的 XVM 个人偏好
   + Default to buying premium consumables w/ credits
 * Carousel
   + Show MoE percentage and XP-to-elite for selected vehicle
+* Hide clan icons everywhere

@@ -116,7 +116,7 @@
   // Clan icon definition.
   // Шаблон иконки клана.
   "clanIcon": {
-    "enabled": true,
+    "enabled": false,
     "x": 65, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
     "src": "{{clanicon}}"
     //"format": "<img src='{{clanicon}}' width='16' height='16'>"
