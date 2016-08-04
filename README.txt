@@ -16,7 +16,10 @@ Whyme 的 XVM 个人偏好
   + Show MoE percentage and XP-to-elite for selected vehicle
   + Sort vehicle by level-type-nation, which helps picking vehicle for platoon
 * Hide some UI elements everywhere
-  - Clan icon
-  - Clock
+  + Clan icon
+  + Clock
 * Show battle tier everywhere
 * Cleaner tech tree
+* Player panel
+  + Only use 'medium2' and 'large' modes
+  + Hide vehicle icon and Roman number for vehicle level

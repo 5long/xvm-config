@@ -139,7 +139,7 @@
     "alpha": 80,
     // Opacity percentage of icons in the panels. 0 - transparent ... 100 - opaque.
     // Прозрачность в процентах иконок в ушах. 0 - прозрачные, 100 - не прозрачные.
-    "iconAlpha": 100,
+    "iconAlpha": 0,
     // true - disable background of the selected player.
     // true - убрать подложку выбранного игрока.
     "removeSelectedBackground": false,
@@ -396,7 +396,7 @@
       "vehicleLevelXOffsetRight": 0,
       // transparency of vehicle level
       // прозрачность уровня танка
-      "vehicleLevelAlpha": 100,
+      "vehicleLevelAlpha": 0,
       // Offset of X value for frags column.
       // Смещение координаты X для поля фрагов.
       "fragsXOffsetLeft": 0,
