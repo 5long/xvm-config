@@ -156,7 +156,7 @@
     // Режим ушей "none" - пустые уши.
     "none": {
       // false - disable (отключить)
-      "enabled": true,
+      "enabled": false,
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
       "expandAreaWidth": 230,
@@ -204,7 +204,7 @@
     // Режим ушей "short" - короткие уши (фраги и иконка танка).
     "short": {
       // false - disable (отключить)
-      "enabled": true,
+      "enabled": false,
       // Displayed standard fields in this mode and their order.
       // Available names: "frags", "vehicle", "nick".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
@@ -290,7 +290,7 @@
     // Режим ушей "medium" - первые средние уши в игре.
     "medium": {
       // false - disable (отключить)
-      "enabled": true,
+      "enabled": false,
       // Displayed standard fields in this mode and their order.
       // Available names: "frags", "vehicle", "nick".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
