@@ -9,7 +9,7 @@
     "al": "0x96FF00", // ally       / союзник
     "sq": "0xFFB964", // squadman   / взводный
     "tk": "0x00EAFF", // teamKiller / тимкиллер
-    "en": "0xF50800", // enemy      / противник
+    "en": "0xBB99FF", // enemy      / противник
     "pl": "0xFFDD33", // player     / игрок
     // Dynamic color by various statistical parameters.
     // Динамический цвет по различным статистическим показателям.
@@ -51,8 +51,8 @@
       "teamKiller_dead":     "0x097783",
       "teamKiller_blowedup": "0x096A75",
       "enemy_alive":         ${"def.en"},
-      "enemy_dead":          "0x840500",
-      "enemy_blowedup":      "0x5A0401",
+      "enemy_dead":          ${"def.en"},
+      "enemy_blowedup":      ${"def.en"},
       "ally_base":           ${"def.al"},
       "enemy_base":          ${"def.en"}
     },
