@@ -19,7 +19,7 @@
     "very_low":         "100",  // very low       / очень низкий
     "low":              "75",   // low            / низкий
     "average":          "50",   // average        / средний
-    "above_average":    "0"     // above-average  / выше среднего
+    "above_average":    "50"     // above-average  / выше среднего
   },
   "alpha": {
     // Dynamic transparency by spotted status
