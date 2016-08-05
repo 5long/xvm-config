@@ -88,11 +88,11 @@
     // Dynamic color by spotted status
     // Динамический цвет по статусу засвета
     "spotted": {
-      "neverSeen":      "0x000000",
+      "neverSeen":      "0xEEEEEE",
       "lost":           "0xD9D9D9",
       "spotted":        "0xFFBB00",
       "dead":           "0xFFFFFF",
-      "neverSeen_arty": "0x000000",
+      "neverSeen_arty": "0xEEEEEE",
       "lost_arty":      "0xD9D9D9",
       "spotted_arty":   "0xFFBB00",
       "dead_arty":      "0xFFFFFF"
