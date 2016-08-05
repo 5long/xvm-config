@@ -23,3 +23,4 @@ Whyme 的 XVM 个人偏好
 * Player panel
   + Only use 'medium2' and 'large' modes
   + Hide vehicle icon and Roman number for vehicle level
+* Hand-picked short vehicle names
