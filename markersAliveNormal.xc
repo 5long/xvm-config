@@ -81,7 +81,7 @@
         "blur": 6,
         "strength": 2
       },
-      "format": "{{vehicle}}{{turret}}"
+      "format": "{{vehicle-short}}{{turret}}"
     },
     // Text field with the name of the player.
     // Текстовое поле с именем игрока.
