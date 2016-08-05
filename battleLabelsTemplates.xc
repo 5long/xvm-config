@@ -171,8 +171,8 @@
     "hitlog": {
       "enabled": true,
       "updateEvent": "ON_DAMAGE_CAUSED",
-      "x": 270,
-      "y": 40,
+      "x": 10,
+      "y": 440,
       "width": 500,
       "height": 1000,
       "textFormat": { "color": "0xF4EFE8", "size": 15 },
