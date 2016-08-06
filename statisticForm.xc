@@ -24,7 +24,7 @@
     "removeVehicleLevel": true,
     // true - disable vehicle type icon. This space will be used for formatted vehicle field.
     // true - убрать отображение типа танка. Пустое место будет использовано под форматируемое поле.
-    "removeVehicleTypeIcon": false,
+    "removeVehicleTypeIcon": true,
     // Show border for name field (useful for config tuning)
     // Показывать рамку для поля имени игрока (полезно для настройки конфига)
     "nameFieldShowBorder": false,
@@ -54,10 +54,10 @@
     "nameFieldWidthRight": 200,
     // X offset for "formatLeftVehicle" field
     // Cмещение по оси X поля названия танка союзников
-    "vehicleFieldOffsetXLeft": 8,
+    "vehicleFieldOffsetXLeft": 30,
     // X offset for "formatRightVehicle" field
     // Cмещение по оси X поля названия танка противников
-    "vehicleFieldOffsetXRight": 5,
+    "vehicleFieldOffsetXRight": 27,
     // Width of "formatLeftVehicle" field
     // Ширина поля названия танка союзников
     "vehicleFieldWidthLeft": 250,
