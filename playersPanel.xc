@@ -512,8 +512,8 @@
       "vehicleWidth": 72,
       // Display format for vehicle name (macros allowed, see macros.txt).
       // Формат отображения названия танка (допускаются макроподстановки, см. macros.txt).
-      "vehicleFormatLeft": "<font color='{{c:vtype}}'>{{vehicle}}</font>",
-      "vehicleFormatRight": "<font color='{{c:vtype}}'>{{vehicle}}</font>",
+      "vehicleFormatLeft": "<font alpha='{{alive?#FF|#80}}' color='{{c:vtype}}'>{{vehicle}}</font>",
+      "vehicleFormatRight": "<font alpha='{{alive?#FF|#80}}' color='{{c:vtype}}'>{{vehicle}}</font>",
       // Extra fields. Each field have size 350x25. Fields are placed one above the other.
       // Дополнительные поля. Каждое поле имеет размер 350x25. Поля располагаются друг над другом.
       // Set of formats for left panel (extended format supported, see above)
