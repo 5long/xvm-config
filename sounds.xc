@@ -26,7 +26,7 @@
       // To disable sound event use empty string for value
       // Для отключения звукового события используйте пустую строку для значения
       //"originalEventName": ""
-      //
+      "expl_ally_NPC": "", // Disable ally dying sound
       // Disable original sixth sense light bulb sound event
       // Отключить оригинальный звук лампы шестого чувства
       "lightbulb": "lightbulb",
