@@ -51,10 +51,10 @@
       "maxRange": 40,
       // Text for normal damage (see description of macros in the macros.txt).
       // Текст при обычном уроне (см. описание макросов в macros.txt).
-      "damageMessage": "{{dmg}}",
+      "damageMessage": "-{{dmg}}",
       // Text for ammo rack explosion (see description of macros in the macros.txt).
       // Текст при взрыве боеукладки (см. описание макросов в macros.txt).
-      "blowupMessage": "{{l10n:blownUp}}\n{{dmg}}"
+      "blowupMessage": "REKT! -{{dmg}}"
     }
   },
   // Настройки для союзников.

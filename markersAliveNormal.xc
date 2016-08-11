@@ -54,7 +54,7 @@
       "damageMessage": "-{{dmg}}",
       // Text for ammo rack explosion (see description of macros in the macros.txt).
       // Текст при взрыве боеукладки (см. описание макросов в macros.txt).
-      "blowupMessage": "REKT!\t-{{dmg}}"
+      "blowupMessage": "REKT! -{{dmg}}"
     },
     // Text field with the name of the tank.
     // Текстовое поле с названием танка.
