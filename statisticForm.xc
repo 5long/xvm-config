@@ -57,10 +57,10 @@
     "nameFieldWidthRight": 200,
     // X offset for "formatLeftVehicle" field
     // Cмещение по оси X поля названия танка союзников
-    "vehicleFieldOffsetXLeft": 30,
+    "vehicleFieldOffsetXLeft": 110,
     // X offset for "formatRightVehicle" field
     // Cмещение по оси X поля названия танка противников
-    "vehicleFieldOffsetXRight": 27,
+    "vehicleFieldOffsetXRight": 107,
     // Width of "formatLeftVehicle" field
     // Ширина поля названия танка союзников
     "vehicleFieldWidthLeft": 250,

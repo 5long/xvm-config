@@ -58,13 +58,13 @@
     "nameFieldWidthDeltaRight": 0,
     // X offset for allies vehicle names field
     // Смещение по оси X поля названия танка союзников
-    "vehicleFieldOffsetXLeft": 0,
+    "vehicleFieldOffsetXLeft": 70,
     // Width delta for allies vehicle names field
     // Изменение ширины поля названия танка союзников
     "vehicleFieldWidthDeltaLeft": 0,
     // X offset for enemies vehicle names field
     // Смещение по оси X поля названия танка противников
-    "vehicleFieldOffsetXRight": 0,
+    "vehicleFieldOffsetXRight": 70,
     // Width delta for enemies vehicle names field
     // Изменение ширины поля названия танка противников
     "vehicleFieldWidthDeltaRight": 0,
