@@ -17,3 +17,4 @@ Whyme 的 XVM 个人偏好
 * Carousel
   + Show MoE percentage and XP-to-elite for selected vehicle
   + Sort vehicle by level-type-nation, which helps picking vehicle for platoon
+* Vehicle role in players paneL

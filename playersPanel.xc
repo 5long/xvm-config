@@ -93,7 +93,7 @@
       "alpha": "{{a:spotted}}",
       // x position.
       // положение по горизонтали.
-      "x": 0,
+      "x": 20,
       // y position.
       // положение по вертикали.
       "y": 1,
@@ -440,6 +440,7 @@
       "extraFieldsLeft": [
         ${"def.clanIcon"},
         ${"def.xvmUserMarker"},
+        ${"whyme/playersPanel.xc": "vrole"},
         ${"def.xmqpServiceMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
@@ -447,6 +448,7 @@
       "extraFieldsRight": [
         ${"def.clanIcon"},
         ${"def.xvmUserMarker"},
+        ${"whyme/playersPanel.xc": "vrole"},
         ${"def.enemySpottedMarker"}
       ]
     },
@@ -517,6 +519,7 @@
       "extraFieldsLeft": [
         ${"def.clanIcon"},
         ${"def.xvmUserMarker"},
+        ${"whyme/playersPanel.xc": "vrole"},
         ${"def.xmqpServiceMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
@@ -524,6 +527,7 @@
       "extraFieldsRight": [
         ${"def.clanIcon"},
         ${"def.xvmUserMarker"},
+        ${"whyme/playersPanel.xc": "vrole"},
         ${"def.enemySpottedMarker"}
       ]
     }
