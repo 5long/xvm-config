@@ -395,7 +395,7 @@
     "usa-A35_Pershing_IGR": { "name": null, "short": null },
     "usa-A36_Sherman_Jumbo": { "name": null, "short": "Jumbo" },
     "usa-A36_Sherman_Jumbo_IGR": { "name": null, "short": null },
-    "usa-A37_M40M43": { "name": null, "short": "4043" },
+    "usa-A37_M40M43": { "name": null, "short": "M4043" },
     "usa-A38_T92": { "name": null, "short": "T92" },
     "usa-A39_T28": { "name": null, "short": "T28" },
     "usa-A40_T95": { "name": null, "short": "T95" },
