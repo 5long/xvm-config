@@ -29,6 +29,12 @@
      │                            │   ON_MODULE_DESTROYED
      │                            │   ON_MODULE_REPAIRED
      │                            │   ON_DAMAGE_CAUSED
+     │                            │   ON_DAMAGE_CAUSED_ALLY
+     │                            │   ON_TARGET_IN  - aim at the vehicle
+     │                            │   ON_TARGET_OUT - aim not at the vehicle
+     │                            │   ON_PANEL_MODE_CHANGED
+     │                            │   ON_EVERY_FRAME           * can reduce performance
+     │                            │   ON_EVERY_SECOND          * can reduce performance
      ├────────────────────────────┼──────────────────────────────────────────────────────────────────────────
      │ "hotKeyCode"               │ keyboard key code (see list in hotkeys.xc), when pressed - switches text field to show and apply configured html in "format", or hide;
      │                            │ when defined, text field will not be shown until key is pressed, to disable define null value or delete parameter
@@ -168,7 +174,7 @@
      │                            │ отображаемые данные в текстовых полях (доступно использование HTML и макросов) (по-умолчанию: "")
      └────────────────────────────┴──────────────────────────────────────────────────────────────────────────
     */
-    "hitlog": {
+    "hitlogHeader": {
       "enabled": true,
       "updateEvent": "ON_DAMAGE_CAUSED",
       "x": 10,
@@ -176,7 +182,18 @@
       "width": 500,
       "height": 1000,
       "textFormat": { "color": "0xF4EFE8", "size": 15 },
-      "format": "{{hitlog-header}}\n{{hitlog-body}}"
+      "format": "{{hitlog-header}}"
+    },
+    "hitlogBody": {
+      "enabled": true,
+      "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": false,
+      "updateEvent": "ON_DAMAGE_CAUSED, ON_PANEL_MODE_CHANGED",
+      "x": "10",
+      "y": "465",
+      "width": 500,
+      "height": 1000,
+      "textFormat": { "color": "0xF4EFE8", "size": 15 },
+      "format": "{{hitlog-body}}"
     },
     "totalHP": {
       "enabled": true,
@@ -216,6 +233,7 @@
     "test2": {
       "enabled": true,
       "hotKeyCode": 36,
+      "updateEvent": "ON_TARGET_IN,ON_TARGET_OUT",
       "y": -70,
       "width": 310,
       "height": 50,
@@ -226,7 +244,7 @@
       "borderColor": "0x101009",
       "shadow": { "distance": 1, "angle": 90, "alpha": 80, "strength": 8},
       "textFormat": { "color": "0x60FF00", "size": 15, "align": "center", "marginLeft": 2, "marginRight": 2},
-      "format": "<font color='#FFFFFF'><b>Info text field (WN8: <font color='{{c:wn8}}'>{{wn8}}</font>)</b></font><br/>Battle tier:<font color='#ff1aff'> {{battletier}}</font> <p align='right'>My vehicle: <font color='#ff1aff'>{{my-vehicle}}</font> (<font color='{{c:t-winrate}}'>{{t-winrate%2d}}%</font>)</p>"
+      "format": "<font color='#FFFFFF'><b>Info text field (XTE: <font color='{{c:xte}}'>{{xte}}</font>)</b></font><br/>Battle tier:<font color='#ff1aff'> {{battletier}}</font> <p align='right'>Vehicle: <font color='#ff1aff'>{{vehicle}}</font> (<font color='{{c:t-winrate}}'>{{t-winrate%2d}}%</font>)</p>"
     }
   }
 }
