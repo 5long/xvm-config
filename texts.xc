@@ -33,7 +33,7 @@
       "lost": "",
       "spotted": "",
       "dead": "",
-      "neverSeen_arty": "<font face='xvm' size='23'>&#x70;</font>",
+      "neverSeen_arty": "",
       "lost_arty": "",
       "spotted_arty": "",
       "dead_arty": ""
