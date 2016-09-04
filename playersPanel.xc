@@ -502,8 +502,8 @@
       "vehicleWidth": 72,
       // Display format for vehicle name (macros allowed, see macros.txt).
       // Формат отображения названия танка (допускаются макроподстановки, см. macros.txt).
-      "vehicleFormatLeft": "<font color='{{c:vtype}}' alpha='{{alive?#FF|#80}}'>{{vehicle-short}}</font>",
-      "vehicleFormatRight": "<font color='{{c:vtype}}' alpha='{{alive?#FF|#80}}'>{{vehicle-short}}</font>",
+      "vehicleFormatLeft": "<font color='{{py:whyme.color_vrole({{veh-id}})}}' alpha='{{alive?#FF|#80}}'>{{vehicle-short}}</font>",
+      "vehicleFormatRight": "<font color='{{py:whyme.color_vrole({{veh-id}})}}' alpha='{{alive?#FF|#80}}'>{{vehicle-short}}</font>",
       // Shadow for vehicle name field (default null = no shadow, as in vanillas client).
       // Тень для поля названия танка (по умолчанию null = без тени, как в чистом клиенте).
       "vehicleShadowLeft": null,
