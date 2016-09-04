@@ -481,7 +481,7 @@
     "ussr-R128_KV4_Kreslavskiy": { "name": null, "short": "KV4K" },
     "ussr-R129_Object_257": { "name": null, "short": null },
     "ussr-R12_A-20": { "name": null, "short": "A20" },
-    "ussr-R13_KV-1s": { "name": null, "short": null },
+    "ussr-R13_KV-1s": { "name": null, "short": "KV1S" },
     "ussr-R14_SU-5": { "name": null, "short": "Su5" },
     "ussr-R15_S-51": { "name": null, "short": "S51" },
     "ussr-R16_SU-18": { "name": null, "short": "Su18" },
