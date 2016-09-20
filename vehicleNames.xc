@@ -341,6 +341,8 @@
     "uk-GB86_Centurion_Action_X": { "name": null, "short": "CentAX" },
     "uk-GB87_Chieftain_T95_turret": { "name": null, "short": "Chft95" },
     "uk-GB88_T95_Chieftain_turret": { "name": null, "short": "T95/Chft" },
+    "uk-GB89_Mark_I_Male": {"name": null, "short": null},
+    "uk-GB90_Lanchester_Armored_Car": {"name": null, "short": null},
     "usa-A01_T1_Cunningham": { "name": null, "short": "T1" },
     "usa-A01_T1_Cunningham_bot": { "name": null, "short": "T1" },
     "usa-A02_M2_lt": { "name": null, "short": "M2lt" },

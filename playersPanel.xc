@@ -26,14 +26,23 @@
  *   "align" - horizontal alignment ("left", "center", "right")
  *      for left panel default value is "left"
  *      for right panel default value is "right"
+ *   "valign" - vertical alignment ("none", "top", "center", "bottom")
  *   "scaleX", "scaleY" - scaling (use negative values for mirroring)
  *   "hotKeyCode" - keyboard key code (see list in hotkeys.xc), when pressed - switches text field to show and apply configured html in "format", or hide; when defined, text field will not be shown until key is pressed, to disable define null value or delete parameter
  *   "onHold" - take action by key click (false) or while key is remains pressed (true); (default: false)
  *   "visibleOnHotKey" - field visible on hot key pressed (true) or vice versa (false); (default: true)
+ *   "flags": [ "player", "ally", "squadman", "enemy", "teamKiller", "neverSeen", "lost", "spotted", "alive", "dead" ],
+ *      Field visibility flag
+ *      If don't set "ally", "squadman", "player", "enemy", "teamKiller", they are not used.
+ *      If don't set "neverSeen", "lost" and "spotted", it uses all - and "neverSeen", and "lost", and "spotted". Note: "neverSeen" status disabled for the minimap.
+ *      If don't set "alive", "dead", it uses both - and "alive", and "dead"
+ *      -------------------------------------------------------------------------------------
+ *      Флаг видимости поля
+ *      Если не указаны "ally", "squadman", "player", "enemy", "teamKiller", то они не используются.
+ *      Если не указаны "neverSeen", "lost" и "spotted", то используются все - и "neverSeen", и "lost", и "spotted". Примечание: статус "neverSeen" для миникарты отключен.
+ *      Если не указаны "alive", "dead", то используются оба - и "alive", и "dead".
  *
  * fields available for TextField format only:
- *   "valign" - vertical alignment ("top", "center", "bottom")
- *      default value is "top"
  *   "borderColor" - if set, draw border with specified color (macros allowed)
  *   "bgColor" - if set, draw background with specified color (macros allowed)
  *   "antiAliasType" - anti aliasing mode ("advanced" or "normal")
@@ -41,13 +50,13 @@
  * fields available for MovieClip format only:
  *   "highlight" - highlight icon depending on the player state, default false
  *
- * fields available for players panel and statistic form only:
+ * fields available for players panel, statistic form, battle loading and minimap:
  *   "layer": field z-order
  *     values:
- *     "substrate": put field behind all standard fields, x value depends on the players panel width
- *     "bottom": put field behind all standard fields, x value does not depend on the players panel width
- *     "normal": put field above vehicle icon but behind standard text fields (default)
- *     "top": put field above standard fields
+ *     "substrate": put field behind all fields (for the players panel x value depends on the players panel width)
+ *     "bottom": put field behind all standard fields but above substrate fields (for the players panel x value does not depend on the players panel width)
+ *     "normal": put field above bottom fields (for the players panel etc- above vehicle icon but behind standard text fields) (default)
+ *     "top": put field above all fields
  *
  * text format and shadow:
  *   http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextFormat.html
@@ -59,6 +68,7 @@
  *     "italic"
  *     "underline"
  *     "align"
+ *     "valign"
  *     "leftMargin"
  *     "rightMargin"
  *     "indent"
@@ -114,7 +124,11 @@
     // Шаблон маркера сервиса XMQP.
     "xmqpServiceMarker": {
       "x": 88, "y": 1, "align": "center", "bindToIcon": true,
-      "format": "<font face='xvm' size='23' color='{{alive?{{x-spotted?#FFBB00|{{x-sense-on?#D9D9D9|#BFBFBF}}}}|#FFFFFF}}' alpha='{{alive?#FF|#80}}'>{{alive?{{x-spotted?&#x70;|{{x-sense-on?&#x70;|{{x-enabled?&#x7A;}}}}}}}}</font>",
+      "textFormat": {
+        "font": "xvm",
+        "size": 23
+      },
+      "format": "<font color='{{alive?{{x-spotted?#FFBB00|{{x-sense-on?#D9D9D9|#BFBFBF}}}}|#FFFFFF}}' alpha='{{alive?#FF|#80}}'>{{alive?{{x-spotted?&#x70;|{{x-sense-on?&#x70;|{{x-enabled?&#x7A;}}}}}}}}</font>",
       "shadow": {}
     },
       // Clan icon.
@@ -140,8 +154,11 @@
     "hpBar": { "hotKeyCode": 29, "onHold": "true", "visibleOnHotKey": true, "x": 42, "y": 7, "bindToIcon": true, "width": "{{hp-ratio:70}}", "height": 12, "bgColor": "{{player?#FFDD33|{{c:system}}}}", "alpha": "{{alive?50|0}}" },
     // Remaining HP.
     // Оставшиеся HP.
-    "hp": { "hotKeyCode": 29, "onHold": "true", "visibleOnHotKey": true, "x": 77, "y": 4, "bindToIcon": true, "align": "center", "alpha": "{{alive?100|0}}",
-      "format": "<font face='$FieldFont' size='11' color='#D9D9D9' alpha='{{alive?{{ready?#FF|#80}}|#80}}'><b>{{alive?{{hp|{{l10n:No data}}}}|{{l10n:Destroyed}}}}</b></font>",
+    "hp": {
+      "hotKeyCode": 29, "onHold": "true", "visibleOnHotKey": true, "bindToIcon": true, "alpha": "{{alive?100|0}}",
+       "x": 41, "width": 72, "y": 4,
+      "textFormat": { "font": "$FieldFont", "size": 11, "color": "0xD9D9D9", "bold": "true", "align": "center" },
+      "format": "<font alpha='{{alive?{{ready?#FF|#80}}|#80}}'><b>{{alive?{{hp|{{l10n:No data}}}}|{{l10n:Destroyed}}}}</b></font>",
       "shadow": { "enabled": true, "color": "0x000000", "alpha": 100, "blur": 4, "strength": 1, "distance": 0, "angle": 0 }
     }
   },

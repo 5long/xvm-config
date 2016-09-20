@@ -3,6 +3,13 @@
  * Параметры карусели танков
  */
 {
+  // Definitions
+  // Шаблоны
+  "def": {
+    // Text fields shadow.
+    // Тень текстовых полей.
+    "textFieldShadow": { "enabled": true, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 2, "distance": 0, "angle": 0 }
+  },
   "carousel": {
     // false - Disable customizable carousel.
     // false - Отключить настраиваемую карусель.
