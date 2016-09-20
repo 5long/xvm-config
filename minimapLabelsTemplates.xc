@@ -88,8 +88,8 @@
       "valign": "center",
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "lost", "alive" ],
       "layer": "bottom",
-      "textFormat": { "font": "xvm", "size": 13, "align": "center", "valign": "center" },
-      "format": "<font color='{{.minimap.labelsData.colors.lostDot.{{sys-color-key}}}}'>{{.minimap.labelsData.vtype.{{vtype-key}}}}</font>"
+      "textFormat": { "size": 13, "align": "center", "valign": "center" },
+      "format": "<font color='{{.minimap.labelsData.colors.lostDot.{{sys-color-key}}}}'>{{.minimap.labelsData.dot}}</font>"
     },
     // Vehicle name, missing
     // Название техники, пропавший
@@ -119,6 +119,7 @@
     // Тип техники, мертвый
     "vtypeDead": {
       "$ref": { "path":"def.defaultItem" },
+      "enabled": false,
       "alpha": 90,
       "align": "center",
       "valign": "center",
@@ -132,6 +133,7 @@
     // Название техники, мертвый
     "vehicleDead": {
       "$ref": { "path":"def.defaultItem" },
+      "enabled": false,
       "x": 2,
       "y": -1,
       "alpha": 85,
@@ -144,6 +146,7 @@
     // Ник игрока, мертвый
     "nickDead": {
       "$ref": { "path":"def.defaultItem" },
+      "enabled": false,
       "x": 2,
       "y": -9,
       "flags": [ "squadman", "dead" ],

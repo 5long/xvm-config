@@ -17,9 +17,9 @@
         "teamKiller_alive":    "#A6F8FF",
         "teamKiller_dead":     "#5B898C",
         "teamKiller_blowedup": "#5B898C",
-        "enemy_alive":         "#FCA9A4",
-        "enemy_dead":          "#996763",
-        "enemy_blowedup":      "#996763"
+        "enemy_alive":         "#C4A7FC",
+        "enemy_dead":          "#C4A7FC",
+        "enemy_blowedup":      "#C4A7FC"
       },
       "dot": {
         "ally_alive":          "#96FF00",
@@ -31,9 +31,9 @@
         "teamKiller_alive":    "#00EAFF",
         "teamKiller_dead":     "#043A40",
         "teamKiller_blowedup": "#043A40",
-        "enemy_alive":         "#F50800",
-        "enemy_dead":          "#4D0300",
-        "enemy_blowedup":      "#4D0300"
+        "enemy_alive":         "#BB99FF",
+        "enemy_dead":          "#C4A7FC",
+        "enemy_blowedup":      "#C4A7FC"
       },
       "lostDot": {
         "ally_alive":          "#B4E595",
@@ -45,11 +45,13 @@
         "teamKiller_alive":    "#00D2E5",
         "teamKiller_dead":     "#043A40",
         "teamKiller_blowedup": "#043A40",
-        "enemy_alive":         "#E59995",
+        "enemy_alive":         "#C4A7FC",
         "enemy_dead":          "#4D0300",
         "enemy_blowedup":      "#4D0300"
       }
     },
+    // http://www.fileformat.info/info/unicode/char/2022/index.htm
+    "dot": "\u2022",
     // Text for {{.minimap.labelsData.vtype.{{vtype-key}}}} macro
     // Текст для макроса {{.minimap.labelsData.vtype.{{vtype-key}}}}
     "vtype": {
