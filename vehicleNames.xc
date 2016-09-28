@@ -196,7 +196,7 @@
     "germany-G55_E-75": { "name": null, "short": "E75" },
     "germany-G56_E-100": { "name": null, "short": "E100" },
     "germany-G57_PzVI_Tiger_P": { "name": null, "short": "TigP" },
-    "germany-G58_VK4502P": { "name": null, "short": "4502P" },
+    "germany-G58_VK4502P": { "name": null, "short": "4502B" },
     "germany-G58_VK4502P7": { "name": null, "short": null },
     "germany-G61_G_E": { "name": null, "short": "GwE" },
     "germany-G63_PzI_ausf_C": { "name": null, "short": "Pz1C" },
