@@ -5,7 +5,8 @@
  */
 {
   "sounds": {
-    "enabled": true,
+    // TODO:0.9.16
+    "enabled": false,
     // List of extra banks to load from folder res_mods/X.Y.Z/audioww.
     // Use semicolon for multiple values: "bank1.bnk; bank2.bnk;..."
     // Список дополнительных банков для загрузки из папки res_mods/X.Y.Z/audioww.
@@ -30,6 +31,8 @@
       // Disable original sixth sense light bulb sound event
       // Отключить оригинальный звук лампы шестого чувства
       "lightbulb": "lightbulb",
+      "lightbulb_02": "lightbulb02",
+      "sixthSense": "",
       //
       // Disable original enemy detection event      
       // Отключить оригинальный звук обнаружения противника
