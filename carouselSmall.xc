@@ -63,12 +63,12 @@
       // Подложка слота
       // Slot background
       { "x": 1, "y": 1, "layer": "substrate", "width": 160, "height": 35, "bgColor": "0x0A0A0A" },
-      // Sign of mastery.
-      // Знак мастерства.
       {
         "enabled": true,
-        "x": 4, "y": 14, "width": 23, "height": 23,
-        "src": "img://gui/maps/icons/library/proficiency/class_icons_{{v.mastery}}.png"
+        "x": 4,
+        "y": 16,
+        "alpha": "{{v.selected?100|0}}",
+        "format": "{{v.xpToEliteLeft?{{v.xpToEliteLeft}}|{{v.damageRating%4.2f~%}}}}"
       }
     ]
   }
