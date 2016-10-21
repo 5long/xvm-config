@@ -266,7 +266,7 @@
     "japan-J26_Type_89": { "name": null, "short": "ChiRo" },
     "japan-J27_O_I_120": { "name": null, "short": "O-Ho" },
     "japan-J28_O_I_100": { "name": null, "short": "O-Ni" },
-    "sweden-S01_Strv_74_A2": { "name": null, "short": null },
+    "sweden-S01_Strv_74_A2": { "name": null, "short": "M42-57" },
     "sweden-S15_L_60":                       {"name": null, "short": "L60"},
     "uk-GB01_Medium_Mark_I": { "name": null, "short": "Medium1" },
     "uk-GB01_Medium_Mark_I_bot": { "name": null, "short": null },
