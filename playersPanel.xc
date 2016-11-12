@@ -148,10 +148,10 @@
     },
     // HP bar background.
     // Подложка индикатора HP.
-    "hpBarBg": { "hotKeyCode": 29, "onHold": "true", "visibleOnHotKey": true, "x": 41, "y": 6, "width": 72, "bindToIcon": true, "height": 14, "bgColor": "0x000000", "alpha": "{{alive?35|0}}" },
+    "hpBarBg": { "hotKeyCode": 29, "onHold": "true", "visibleOnHotKey": true, "x": 41, "y": 6, "width": 72, "bindToIcon": true, "height": 14, "bgColor": "0x000000", "alpha": "{{alive?{{hp?35|0}}|0}}" },
     // HP bar.
     // Индикатор HP.
-    "hpBar": { "hotKeyCode": 29, "onHold": "true", "visibleOnHotKey": true, "x": 42, "y": 7, "bindToIcon": true, "width": "{{hp-ratio:70}}", "height": 12, "bgColor": "{{player?#FFDD33|{{c:system}}}}", "alpha": "{{alive?50|0}}" },
+    "hpBar": { "hotKeyCode": 29, "onHold": "true", "visibleOnHotKey": true, "x": 42, "y": 7, "bindToIcon": true, "width": "{{hp-ratio:70}}", "height": 12, "bgColor": "{{player?#FFDD33|{{c:system}}}}", "alpha": "{{alive?{{hp?50|0}}|0}}" },
     // Remaining HP.
     // Оставшиеся HP.
     "hp": {
