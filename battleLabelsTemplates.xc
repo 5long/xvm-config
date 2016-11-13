@@ -210,7 +210,7 @@
     },
     "hitlogBody": {
       "enabled": true,
-      "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": false,
+      "hotKeyCode": 29, "onHold": "true", "visibleOnHotKey": true,
       "updateEvent": "ON_DAMAGE_CAUSED, ON_PANEL_MODE_CHANGED",
       "x": "10",
       "y": "465",
