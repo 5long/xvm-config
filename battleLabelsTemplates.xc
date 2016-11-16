@@ -242,7 +242,7 @@
       "format": "{{py:xvm.total_hp.avgDamage('{{l10n:avgDamage}}: ',{{hitlog.dmg-total}})}}"
     },
     "mainGun": {
-      "enabled": true,
+      "enabled": false,
       "updateEvent": "ON_DAMAGE_CAUSED, ON_DAMAGE_CAUSED_ALLY",
       "x": 170,
       "y": 30,
