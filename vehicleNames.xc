@@ -370,6 +370,7 @@
     "usa-A111_T25_Pilot": { "name": null, "short": "T25P" },
     "usa-A112_T71E2": { "name": null, "short": "T71E2" },
     "usa-A117_T26E5":                        {"name": null, "short": "T26E5"},
+    "usa-A117_T26E5_Patriot":                {"name": null, "short": "T26E5"},
     "usa-A11_T29": { "name": null, "short": "T29" },
     "usa-A11_T29_IGR": { "name": null, "short": null },
     "usa-A12_T32": { "name": null, "short": "T32" },

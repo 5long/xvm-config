@@ -29,7 +29,7 @@
     // Text for {{spotted}} macro.
     // Текст для макроса {{spotted}}
     "spotted": {
-      "neverSeen": "<font face='xvm' size='23'>&#x70;</font>",
+      "neverSeen": "<font face='xvm' size='24'>&#x70;</font>",
       "lost": "",
       "spotted": "",
       "dead": "",
