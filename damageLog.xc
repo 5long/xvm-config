@@ -26,21 +26,28 @@
     {{hit-effects}}       - kind of hit / вид попадания.
     {{dmg-ratio}}         - received damage in percent / полученный урон в процентах.
     {{team-dmg}}          - source of damage (ally , enemy, self damage) / источник урона (союзник, противник, урон по себе).
-    {{splash-hit}}        - text when hit by splash damage from shell (HE/HESH) / текст при попадание осколков снаряда (ОФ/ХФ).
-    {{my-alive}}          - TO DO / возвращает 'alive', если я живой, '', если не живой
+    {{splash-hit}}        - text when hit by splash damage from shell (HE/HESH) / текст при попадании осколков снаряда (ОФ/ХФ).
+    {{my-alive}}          - value 'alive' if my vehicle is alive, '' for dead / возвращает 'alive', если я живой, '', если не живой
+    {{reloadGun}}         - reloading time of a gun / время перезарядки орудия 
+    {{gun-caliber}}       - caliber of a gun / калибр орудия
 */
 
 {
   "damageLog": {
     // true - disable standard detailed damage.
     // true - отключить стандартный детальный урон.
-    "disabledDetailStats": false,
+    "disabledDetailStats": true,
     // true - disable standard summarized damage.
     // true - отключить стандартный суммарный урон.
-    "disabledSummaryStats": false,    
+    "disabledSummaryStats": true,
+    //TO DO
+    //true - запоминать местоположение лога и последенего урона в бою
+    "saveLocationInBattle": false,
     // Log of the received damage.
     // Лог полученного урона.
     "log": {
+      "x": 240,
+      "y": -23,
       // Kind of the received damage (macro {{dmg-kind}}).
       // Вид полученного урона (макрос {{dmg-kind}}).
       "dmg-kind": {
@@ -191,6 +198,20 @@
       // true - суммировать повреждения от тарана, столкновения с объектами, падения.
       //        Урон суммируется, если наносится чаще одного раза в секунду.
       "groupDamagesFromRamming_WorldCollision": true,
+      //TO DO
+      //Настройка тени
+      "shadow": { 
+        "distance": 1,
+        "angle": 90,
+        "color": "#000000",
+        "alpha": 75,
+        "blur": 5,
+        "strength": 3,
+        "hideObject": false,
+        "inner": false,
+        "knockout": false,
+        "quality": 1 
+      },
       // Damage log format.
       // Формат лога повреждений.
       "formatHistory": "<textformat tabstops='[30,135,170,185]'><font face='mono' size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}{{splash-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:vtype}}'>{{vtype}}</font><tab><font color='{{c:team-dmg}}'>{{vehicle}}</font></textformat>"
@@ -210,29 +231,25 @@
     // Отображение последнего урона (попадания).
     "lastHit": {
       "$ref": { "path":"damageLog.log" },
+      "x": -120,
+      "y": 200,
       // true - show hits without damage, false - not to show.
       // true - отображать попадания без урона, false - не отображать.
       "showHitNoDamage": true,
       // Display duration (seconds).
       // Продолжительность отображения (секунды).
       "timeDisplayLastHit": 7,
+      //TO DO
+      //Настройка тени
+      "shadow": { 
+        "distance": 0,
+        "blur": 6,
+        "strength": 6,
+        "color": "{{dmg=0?#000000|#770000}}"
+      },
       // Last damage format.
       // Формат последнего урона.
       "formatLastHit": "<font size='36' color='{{c:dmg-kind}}'>{{hit-effects}}</font>"
-    },
-    // Timer reload (value is not accurate, and consistent with the standard characteristics of vehicle).
-    // Таймер перезарядки (значение не точное, и соответствует стандартным характеристикам техники).
-    "timeReload": {
-      "$ref": { "path":"damageLog.log" },
-      // Reload timer format.
-      // Формат таймера перезарядки.
-      "formatTimer": "<font face='xvm'>&#x114;</font>  {{timer}} {{l10n:sec}}.   [ <font color='{{c:team-dmg}}'>{{vehicle}}</font> ]",
-      // Reload timer format (after reload).
-      // Формат таймера перезарядки (после перезарядки).
-      "formatTimerAfterReload": "<font face='xvm'>&#x114;</font>   [ <font color='{{c:team-dmg}}'>{{vehicle}}</font> ]  {{l10n:reloaded}}",
-      // Display duration "formatTimerAfterReload" (seconds).
-      // Продолжительность отображения "formatTimerAfterReload" (секунды).
-      "timeTextAfterReload": 5
     }
   }
 }
