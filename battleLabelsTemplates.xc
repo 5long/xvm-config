@@ -157,8 +157,8 @@
     "totalEfficiency": {
       "enabled": true,
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY)",
-      "x": 240,
-      "y": -2,
+      "x": 2,
+      "y": -232,
       "width": 300,
       "height": 22,
       "screenVAlign": "bottom",
