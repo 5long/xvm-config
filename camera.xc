@@ -104,7 +104,7 @@
         "shadow": {
           // false - no shadow
           // false - без тени
-          "enabled": true,
+          "enabled": false,
           "distance": 0,             // (in pixels)     / offset distance / дистанция смещения
           "angle": 0,                // (0.0 .. 360.0)  / offset angle    / угол смещения
           "color": "0x192E0E",       // "0xXXXXXX"      / color           / цвет
