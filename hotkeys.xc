@@ -12,15 +12,18 @@
     // Minimap zooming.
     // Увеличение миникарты.
     "minimapZoom":         { "enabled": true, "keyCode": 29, "onHold": true },
-    // Alternative minimap mode.
+    // Minimap alternative mode.
     // Альтернативный режим миникарты.
     "minimapAltMode":      { "enabled": false, "keyCode": 29, "onHold": true },
-    // Alternative "ears" (players panels) mode.
+    // "Ears" (players panels) alternative mode.
     // Альтернативный режим "ушей" (панелей игроков).
     "playersPanelAltMode": { "enabled": false, "keyCode": 29, "onHold": true },
-    // Alternative vehicle markers mode.
+    // Vehicle markers alternative mode.
     // Альтернативный режим маркеров над танками.
-    "markersAltMode":      { "enabled": false, "onHold": true }
+    "markersAltMode":      { "enabled": false, "onHold": true },
+    // Damage log alternative mode.
+    // Альтернативный режим лога полученного урона.
+    "damageLogAltMode":    { "enabled": true, "keyCode": 56, "onHold": true }
   }
 }
 

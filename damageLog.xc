@@ -27,11 +27,15 @@
     {{dmg-ratio}}         - received damage in percent / полученный урон в процентах.
     {{team-dmg}}          - source of damage (ally , enemy, self damage) / источник урона (союзник, противник, урон по себе).
     {{splash-hit}}        - text when hit by splash damage from shell (HE/HESH) / текст при попадании осколков снаряда (ОФ/ХФ).
-    {{my-alive}}          - value 'alive' if my vehicle is alive, '' for dead / возвращает 'alive', если я живой, '', если не живой
+    {{my-alive}}          - value 'al' if my vehicle is alive, '' for dead / возвращает 'al', если я живой, '', если не живой
     {{reloadGun}}         - reloading time of a gun / время перезарядки орудия 
     {{gun-caliber}}       - caliber of a gun / калибр орудия
-    {{wn8}}, {{xwn8}}, {{eff}}, {{xeff}}, {{wgr}}, {{xwgr}}, {{xte}}                - TO DO / макросы статистика (смотрите macros_ru.txt)
-    {{c:wn8}}, {{c:xwn8}}, {{c:eff}}, {{c:xeff}}, {{c:wgr}}, {{c:xwgr}}, {{c:xte}}  - TO DO / макросы статистика (смотрите macros_ru.txt)
+    {{wn8}}, {{xwn8}}, {{wn6}}, {{xwn6}}, {{eff}}, {{xeff}}, {{wgr}}, {{xwgr}}, {{xte}}, {{r}}                      - statistics macros (see macros.txt) / макросы статистика (смотрите macros_ru.txt)
+    {{c:wn8}}, {{c:xwn8}}, {{c:wn6}}, {{c:xwn6}}, {{c:eff}}, {{c:xeff}}, {{c:wgr}}, {{c:xwgr}}, {{c:xte}}, {{c:r}}  - statistics macros (see macros.txt) / макросы статистика (смотрите macros_ru.txt)
+    {{fire-duration}}     - duration of fire ("groupDamagesFromFire" must be enabled to work) / продолжительность пожара (работает только при включенной опции "groupDamagesFromFire")
+    {{diff-masses}}       - vehicles weights difference during collision / разность масс техники при столкновении
+    {{nation}}            - vehicle nation / нация техники
+    {{my-blownup}}        - value 'blownup' if own vehicle's ammunition have been blown up, '' otherwise  / возвращает 'blownup', если взорван боекомплект техники игрока, иначе пусто
 */
 
 {
@@ -42,18 +46,19 @@
     // true - disable standard summarized damage.
     // true - отключить стандартный суммарный урон.
     "disabledSummaryStats": true,
-    //TO DO
-    //true - запоминать местоположение лога и последенего урона в бою
-    "saveLocationInBattle": false,
     // Log of the received damage.
     // Лог полученного урона.
     "log": {
+      //TO DO
+      //true - разрешено перемещать в бою лог полученного урона, макросы в "x" и "y" не работают
+      //false - запрещено перемещать в бою лог полученного урона, макросы в "x" и "y" работают
+      "moveInBattle": false,
       "x": 240,
       "y": -23,
       // Kind of the received damage (macro {{dmg-kind}}).
       // Вид полученного урона (макрос {{dmg-kind}}).
       "dmg-kind": {
-        "shot": "{{type-shell}}", //"<font face='xvm'>&#x50;</font>", // shot / попадание
+        "shot": "{{type-shell}}",                            // shot / попадание
         "fire": "<font face='xvm'>&#x51;</font>",                     // fire / пожар
         "ramming": "<font face='xvm'>&#x52;</font>",                  // ramming / таран
         "world_collision": "<font face='xvm'>&#x53;</font>",          // world collision / столкновение с объектами, падение
@@ -216,10 +221,18 @@
       },
       // Damage log format.
       // Формат лога повреждений.
-      "formatHistory": "<textformat tabstops='[30,70]'><font face='mono' size='12'>{{number%2d~.}}</font><tab><font color='#CCCCCC'>{{hit-effects}}{{critical-hit}}{{splash-hit}}<tab>{{dmg-kind}}</font></textformat>"
+      "formatHistory": "<textformat tabstops='[30,70]'><font face='mono' size='12'>{{number%3d~.}}</font><tab><font color='#CCCCCC'>{{hit-effects}}{{critical-hit}}{{splash-hit}}<tab>{{dmg-kind}}</font></textformat>"
     },
-    // Log of the received damage with the left Alt key.
-    // Лог полученного урона c нажатой левой клавишей Alt.
+    // TODO.
+    // Подложка лога полученного урона.
+    "logBackground": {
+      "$ref": { "path":"damageLog.log" },
+      // TODO
+      // Формат подложки лога повреждений.
+      "formatHistory": "<img height='20' width='310' src='xvm://res/icons/damageLog/{{dmg=0?no_dmg|dmg}}.png'>"
+    },
+    // TODO.
+    // Альтернативный лог полученного урона.
     "logAlt": {
       "$ref": { "path":"damageLog.log" },
       // true - show hits without damage, false - not to show.
@@ -227,12 +240,24 @@
       "showHitNoDamage": false,
       // Damage log format.
       // Формат лога повреждений.
-      "formatHistory": "<textformat tabstops='[30,135,170]'><font face='mono' size='12'>{{number%2d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}{{splash-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></textformat>"
+      "formatHistory": "<textformat tabstops='[30,135,170]'><font face='mono' size='12'>{{number%3d~.}}</font><tab><font color='{{c:dmg-kind}}'>{{hit-effects}}{{critical-hit}}{{splash-hit}}<tab>{{dmg-kind}}</font><tab><font color='{{c:team-dmg}}'>{{name}}</font></textformat>"
     },
+    // TODO.
+    // Подложка альтернативного лога полученного урона.
+    "logAltBackground": {
+      "$ref": { "path":"damageLog.logAlt" },
+      // TODO
+      // Формат подложки альтернативного лога полученного урона.
+      "formatHistory": "<img height='20' width='310' src='xvm://res/icons/damageLog/{{dmg=0?no_dmg|dmg}}.png'>"
+    },    
     // Display the last damage (hit).
     // Отображение последнего урона (попадания).
     "lastHit": {
       "$ref": { "path":"damageLog.log" },
+      //TO DO
+      //true - разрешено перемещать поле последнего урона в бою, макросы в "x" и "y" не работают
+      //false - запрещено перемещать поле последнего урона в бою, макросы в "x" и "y" работают
+      "moveInBattle": false,
       "x": -120,
       "y": 200,
       // true - show hits without damage, false - not to show.

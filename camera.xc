@@ -115,7 +115,10 @@
       },
       // false - disable the shot recoil effect (for the enabled dynamic camera option)
       // false - выключить эффект отдачи от выстрела (для включенной опции динамической камеры)
-      "shotRecoilEffect": false
+      "shotRecoilEffect": false,
+      // true - disable dimming and greening in sniper scope
+      // true - отключить затемнение и озеленение в снайперском прицеле
+      "noBinoculars": true
     }
   }
 }

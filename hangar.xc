@@ -49,9 +49,6 @@
     // Below this percentage, ammo is low. (0 - 100)
     // Ниже этого процента, снарядов считается мало. (0 - 100)
     "lowAmmoPercentage": 20,
-    // true - Enable widgets
-    // true - включить виджеты
-    "widgetsEnabled": false,
     // Ping servers
     // Пинг серверов
     "pingServers": {
@@ -74,6 +71,10 @@
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
+      // If set, draw image at background.
+      // Фоновое изображение, если задано.
+      // example: "bgImage": "cfg://My/img/my.png",
+      "bgImage": null,
       // Server to response time text delimiter
       // Разделитель сервера от времени отклика
       "delimiter": ": ",
@@ -177,6 +178,10 @@
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
+      // If set, draw image at background.
+      // Фоновое изображение, если задано.
+      // example: "bgImage": "cfg://My/img/my.png",
+      "bgImage": null,
       // Server to online text delimiter
       // Разделитель сервера от онлайна
       "delimiter": ": ",
@@ -260,7 +265,64 @@
     "serverInfo": {
       // Show server info in hangar.
       // Показывать информацию о сервере в ангаре.
-      "enabled": false,
+      "enabled": true,
+      // Transparency in percents [0..100].
+      // Прозрачность в процентах [0..100].
+      "alpha": 100,
+      // Rotation in degrees [0..360].
+      // Угол поворота в градусах [0..360].
+      "rotation": 0,
+      // Shift X position
+      // Сдвиг по оси X
+      "shiftX": 0,
+      // Shift Y position
+      // Сдвиг по оси Y
+      "shiftY": 0
+    },
+    // Show/hide common quests button or change its parameters
+    // Показать/спрятать кнопку общих задач, или изменить ее параметры
+    "commonQuests": {
+      // Show common quests button in hangar.
+      // Показывать кнопку общих задач в ангаре.
+      "enabled": true,
+      // Transparency in percents [0..100].
+      // Прозрачность в процентах [0..100].
+      "alpha": 100,
+      // Rotation in degrees [0..360].
+      // Угол поворота в градусах [0..360].
+      "rotation": 0,
+      // Shift X position
+      // Сдвиг по оси X
+      "shiftX": 0,
+      // Shift Y position
+      // Сдвиг по оси Y
+      "shiftY": 0
+    },
+    // Show/hide personal quests button or change its parameters
+    // Показать/спрятать кнопку персональных задач, или изменить ее параметры
+    "personalQuests": {
+      // Show personal quests button in hangar.
+      // Показывать кнопку персональных задач в ангаре.
+      "enabled": true,
+      // Transparency in percents [0..100].
+      // Прозрачность в процентах [0..100].
+      "alpha": 100,
+      // Rotation in degrees [0..360].
+      // Угол поворота в градусах [0..360].
+      "rotation": 0,
+      // Shift X position
+      // Сдвиг по оси X
+      "shiftX": 0,
+      // Shift Y position
+      // Сдвиг по оси Y
+      "shiftY": 0
+    },
+    // Show/hide current vehicle name, type and level or change their parameters
+    // Показать/спрятать название, тип и уровень текущего танка, или изменить их параметры
+    "vehicleName": {
+      // Show current vehicle name, type and level in hangar.
+      // Показывать название, тип и уровень текущего танка в ангаре.
+      "enabled": true,
       // Transparency in percents [0..100].
       // Прозрачность в процентах [0..100].
       "alpha": 100,
@@ -292,8 +354,8 @@
     // Parameters for tank carousel
     // Параметры карусели танков
     "carousel": ${"carousel.xc":"carousel"},
-    // Parameters for hangar clock
-    // Параметры часов в ангаре
-    "clock": ${"clock.xc":"clock"}
+    // Parameters for widgets
+    // Параметры виджетов
+    "widgets": ${"widgets.xc":"widgets.lobby"}
   }
 }
